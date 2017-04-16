@@ -15,7 +15,6 @@
   "author": "Geoffrey Porto",
   "repository": {
     "type": "git",
-    //"url": "https://github.com/thoughtworks/build-your-own-radar"
     "url": "https://github.com/geoffreyporto/radartec"
   },
   "keywords": [
