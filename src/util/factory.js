@@ -39,7 +39,7 @@ const GoogleSheet = function (sheetReference, sheetName) {
 
         function displayErrorMessage(exception) {
             d3.selectAll(".loading").remove();
-            var message = 'Oops! It seems like there are some problems with loading your data. ';
+            var message = '¡Vaya! Parece que hay algunos problemas con la carga de sus datos. ';
 
             if (exception instanceof MalformedDataError) {
                 message = message.concat(exception.message);
@@ -49,7 +49,7 @@ const GoogleSheet = function (sheetReference, sheetName) {
                 console.error(exception);
             }
 
-            message = message.concat('<br/>', 'Please check <a href="https://info.thoughtworks.com/visualize-your-tech-strategy-guide.html#faq">FAQs</a> for possible solutions.');
+            message = message.concat('<br/>', 'Por favor verifique <a href="https://arquitectura.banregio.com/visualice-radartec-guia-estrategico.html#faq">FAQs</a> para posible soluciones.');
 
             d3.select('body')
                 .append('div')
@@ -124,7 +124,7 @@ const GoogleSheet = function (sheetReference, sheetName) {
 
         plotLogo(content);
 
-        var bannerText = '<h1>Construyendo tu radar...</h1><p>Your Technology Radar will be available in just a few seconds</p>';
+        var bannerText = '<h1>Procesando Radar Tecnologico...</h1><p>El Radar Tecnologico debe estar dispoble en pocos segundos</p>';
         plotBanner(content, bannerText);
         plotFooter(content);
 
@@ -169,8 +169,8 @@ const GoogleSheetInput = function () {
 
             plotLogo(content);
 
-            var bannerText = '<h1>Radar Tecnologico de Banregio </h1><p>Once you\'ve <a href ="https://info.thoughtworks.com/visualize-your-tech-strategy.html">created your Radar</a>, you can use this service' +
-                ' to generate an <br />interactive version of your Technology Radar. Not sure how? <a href ="https://info.thoughtworks.com/visualize-your-tech-strategy-guide.html">Read this first.</a></p>';
+            var bannerText = '<h1>Radar Tecnologico</h1><p>Somos un <a href ="https://www.banregio.com">banco innovador</a> dedicado a entregar más valor para nuestros clientes. <br />' +
+                ' Te mostraremos la versión interactiva de nuestro Radar Tecnologico. Te encanta esto? <a href ="https://info.thoughtworks.com/visualize-your-tech-strategy-guide.html">Quiero ser parte del equipo.</a></p>';
 
             plotBanner(content, bannerText);
 
@@ -185,7 +185,7 @@ const GoogleSheetInput = function () {
 };
 
 function set_document_title() {
-    document.title = "Build your own Radar";
+    document.title = "Radar tecnologico de Banregio";
 }
 
 function plotLogo(content) {
@@ -201,11 +201,10 @@ function plotFooter(content) {
         .append('div')
         .attr('class', 'footer-content')
         .append('p')
-        .html('Powered by <a href="https://www.thoughtworks.com"> ThoughtWorks</a>. '
-        + 'By using this service you agree to <a href="https://info.thoughtworks.com/visualize-your-tech-strategy-terms-of-service.html">ThoughtWorks\' terms of use</a>. '
-        + 'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. '
-        + 'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.');
-
+        .html('Powered by <a href="https://www.banregio.com"> Banregio - Arquitectura TI</a>. '
+        + 'Al utilizar este servicio, usted acepta <a href="https://info.banregio.com/visualice-radartec-estrategia-terms-de-servicio.html">ThoughtWorks\' terminos de uso</a>. ');
+        //+ 'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.');
+        //+ 'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. '
 
 
 }
@@ -221,7 +220,7 @@ function plotForm(content) {
     content.append('div')
         .attr('class', 'input-sheet__form')
         .append('p')
-        .html('<strong>Enter the URL of your <a href="https://info.thoughtworks.com/visualize-your-tech-strategy-guide.html#publish-byor-sheet" target="_blank">published</a> Google Sheet below…</strong>');
+        .html('<strong>Especifique la URL del <a href="https://info.banregio.com/visualice-radartec-guia-estrategia.html#publish-byor-sheet" target="_blank">publicado</a> Google Sheet Radar Tecnologico abajo…</strong>');
 
     var form = content.select('.input-sheet__form').append('form')
         .attr('method', 'get');
@@ -235,9 +234,9 @@ function plotForm(content) {
         .attr('type', 'submit')
         .append('a')
         .attr('class', 'button')
-        .text('Build my radar');
+        .text('Procesar Radar Tecnologico');
 
-    form.append('p').html("<a href='https://info.thoughtworks.com/visualize-your-tech-strategy-guide.html#faq'>Need help?</a>");
+    form.append('p').html("<a href='https://info.banregio.com/visualice-radartec-guia-estrategia.html#faq'>Nececita ayuda?</a>");
 }
 
 module.exports = GoogleSheetInput;
