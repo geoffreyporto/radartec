@@ -268,7 +268,7 @@ const Radar = function (size, radar) {
   function createHomeLink(pageElement) {
     if (pageElement.select('.home-link').empty()) {
       pageElement.append('div')
-        .html('&#171; Back to Radar home')
+        .html('&#171; Regresar al inicio')
         .classed('home-link', true)
         .classed('selected', true)
         .on('click', redrawFullRadar)
@@ -286,8 +286,11 @@ const Radar = function (size, radar) {
   function drawLegend(order) {
     removeRadarLegend();
 
-    var triangleKey = "New or moved";
-    var circleKey = "No change";
+    //var triangleKey = "New or moved";
+    //var circleKey = "No change";
+
+    var triangleKey = "Nuevo or movido";
+    var circleKey = "Ningún cambio";
 
     var container = d3.select('svg').append('g')
       .attr('class', 'legend legend'+"-"+order);
@@ -410,7 +413,7 @@ const Radar = function (size, radar) {
 
     header.append('div')
       .classed('print-radar button no-capitalize', true)
-      .text('Print this radar')
+      .text('Imprimir este radar')
       .on('click', window.print.bind(window));
   }
 
@@ -422,9 +425,9 @@ const Radar = function (size, radar) {
       .attr('class', 'footer-content')
       .append('p')
       .html('Powered by <a href="https://www.thoughtworks.com"> Banregio</a>. '
-      + 'By using this service you agree to <a href="https://info.thoughtworks.com/visualize-your-tech-strategy-terms-of-service.html">ThoughtWorks\' terms of use</a>. '
-      + 'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. '
-      + 'This software is <a href="https://github.com/geoffreyporto/radartec">open source</a> and available for download and self-hosting.');
+      + 'Al utilizar este servicio, acepta <a href="https://info.thoughtworks.com/visualize-your-tech-strategy-terms-of-service.html"> terminos de uso de Banregio</a>. '
+      + 'Usted también acepta nuestro <a href="https://www.thoughtworks.com/privacy-policy">política de privacidad</a>, lo cuál describe cómo recopilaremos, utilizaremos y protegeremos cualquier dato personal contenido en su Hoja de Google pública. '
+      + 'Este software es <a href="https://github.com/geoffreyporto/radartec">open source</a> Y disponible para la transferencia directa y el auto-hospedaje');
   }
 
   function mouseoverQuadrant(order) {
