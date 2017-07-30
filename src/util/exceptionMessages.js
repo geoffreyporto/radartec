@@ -4,7 +4,7 @@ const ExceptionMessages = {
   MISSING_HEADERS: 'Document is missing one or more required headers or they are misspelled. ' +
   'Check that your document contains headers for "name", "ring", "quadrant", "isNew", "description".',
   MISSING_CONTENT: 'Document is missing content.',
-  LESS_THAN_FOUR_QUADRANTS : 'There are less than 4 quadrant names listed in your data. Check the quadrant column for errors.',
+  LESS_THAN_FOUR_QUADRANTS : 'Hay más de 4 nombres de cuadrantes en la lista de sus datos',
   SHEET_NOT_FOUND: '¡Oops! No podemos encontrar la Hoja de Google que has ingresado. ¿Puedes revisar la URL?'
 };
 
