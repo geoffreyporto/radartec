@@ -185,7 +185,7 @@ const GoogleSheetInput = function () {
 };
 
 function set_document_title() {
-    document.title = "Radar tecnologico de Banregio";
+    document.title = "Radar de Banregio";
 }
 
 function plotLogo(content) {
@@ -202,7 +202,7 @@ function plotFooter(content) {
         .attr('class', 'footer-content')
         .append('p')
         .html('Powered by <a href="https://www.banregio.com"> Banregio - Arquitectura TI</a>. '
-        + 'Al utilizar este servicio, usted acepta <a href="https://info.banregio.com/visualice-radartec-estrategia-terms-de-servicio.html">ThoughtWorks\' terminos de uso</a>. ');
+        + 'Al utilizar este servicio, usted acepta <a href="https://info.banregio.com/visualice-radarbr-estrategia-terms-de-servicio.html">ThoughtWorks\' terminos de uso</a>. ');
         //+ 'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.');
         //+ 'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. '
 
@@ -236,7 +236,7 @@ function plotForm(content) {
         .attr('class', 'button')
         .text('Procesar Radar Tecnologico');
 
-    form.append('p').html("<a href='https://info.banregio.com/visualice-radartec-guia-estrategia.html#faq'>Nececita ayuda?</a>");
+    form.append('p').html("<a href='https://info.banregio.com/visualice-radarbr-guia-estrategia.html#faq'>Nececita ayuda?</a>");
 }
 
 module.exports = GoogleSheetInput;

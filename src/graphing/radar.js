@@ -289,7 +289,7 @@ const Radar = function (size, radar) {
     //var triangleKey = "New or moved";
     //var circleKey = "No change";
 
-    var triangleKey = "Nuevo or movido";
+    var triangleKey = "Nuevo/movido";
     var circleKey = "Ningún cambio";
 
     var container = d3.select('svg').append('g')
@@ -385,7 +385,7 @@ const Radar = function (size, radar) {
     header.select('.radar-title')
       .append('div')
       .attr('class', 'radar-title__logo')
-      .html('<a href="https://www.thoughtworks.com"> <img src="/images/logo.png" /> </a>');
+      .html('<a href="https://www.banregio.com"> <img src="/images/logo.png" /> </a>');
 
     return header;
   }
@@ -413,7 +413,7 @@ const Radar = function (size, radar) {
 
     header.append('div')
       .classed('print-radar button no-capitalize', true)
-      .text('Imprimir este radar')
+      .text('Imprimir este RadarBR')
       .on('click', window.print.bind(window));
   }
 
@@ -424,9 +424,9 @@ const Radar = function (size, radar) {
       .append('div')
       .attr('class', 'footer-content')
       .append('p')
-      .html('Powered by <a href="https://www.thoughtworks.com"> Banregio</a>. '
-      + 'Al utilizar este servicio, acepta <a href="https://info.thoughtworks.com/visualize-your-tech-strategy-terms-of-service.html"> terminos de uso de Banregio</a>. '
-      + 'Usted también acepta nuestro <a href="https://www.thoughtworks.com/privacy-policy">política de privacidad</a>, lo cuál describe cómo recopilaremos, utilizaremos y protegeremos cualquier dato personal contenido en su Hoja de Google pública. '
+      .html('Powered by <a href="https://www.banregio.com"> Banregio</a>. '
+      + 'Al utilizar este servicio, acepta <a href="https://info.banregio.com/visualize-your-tech-strategy-terms-of-service.html"> terminos de uso de Banregio</a>. '
+      + 'Usted también acepta nuestro <a href="https://www.banregio.com/privacy-policy">política de privacidad</a>, lo cuál describe cómo recopilaremos, utilizaremos y protegeremos cualquier dato personal contenido en su Hoja de Google pública. '
       + 'Este software es <a href="https://github.com/geoffreyporto/radartec">open source</a> Y disponible para la transferencia directa y el auto-hospedaje');
   }
 
