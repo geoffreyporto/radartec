@@ -124,7 +124,7 @@ const GoogleSheet = function (sheetReference, sheetName) {
 
         plotLogo(content);
 
-        var bannerText = '<h1>Procesando Radar Tecnologico...</h1><p>El Radar Tecnologico debe estar dispoble en pocos segundos</p>';
+        var bannerText = '<h1>Procesando RadarBR...</h1><p>El RadarBR debe estar disponible en pocos segundos</p>';
         plotBanner(content, bannerText);
         plotFooter(content);
 
@@ -169,8 +169,8 @@ const GoogleSheetInput = function () {
 
             plotLogo(content);
 
-            var bannerText = '<h1>Radar Tecnologico</h1><p>Somos un <a href ="https://www.banregio.com">banco innovador</a> dedicado a entregar más valor para nuestros clientes. <br />' +
-                ' Te mostraremos la versión interactiva de nuestro Radar Tecnologico. Te encanta esto? <a href ="https://info.thoughtworks.com/visualize-your-tech-strategy-guide.html">Quiero ser parte del equipo.</a></p>';
+            var bannerText = '<h1>RadarBR </h1><p>Somos un <a href ="https://www.banregio.com">banco innovador</a> dedicado a entregar más valor para nuestros clientes. <br />' +
+                ' Te mostraremos la versión interactiva de nuestro RadarBR. Te encanta esto? <a href ="https://info.thoughtworks.com/visualize-your-tech-strategy-guide.html">Quiero ser parte del equipo.</a></p>';
 
             plotBanner(content, bannerText);
 
