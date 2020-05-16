@@ -1,3 +1,5 @@
+[![Stories in Ready](https://badge.waffle.io/geoffreyporto/radartec.png?label=ready&title=Ready)](https://waffle.io/geoffreyporto/radartec)
+[![Stories in Ready](https://badge.waffle.io/geoffreyporto/radartec.png?label=ready&title=Ready)](https://waffle.io/geoffreyporto/radartec)
 [![Build Status](https://snap-ci.com/thoughtworks/build-your-own-radar/branch/master/build_image)](https://snap-ci.com/thoughtworks/build-your-own-radar/branch/master)
 
 A library of Banregio that generates an interactive radar, inspired by [thoughtworks.com/radar](http://thoughtworks.com/radar).
